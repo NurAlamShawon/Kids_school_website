@@ -10,6 +10,9 @@
 .color_04 {
   color: #5d58ef;
 }
+.color_05{
+    color: #808080;
+}
 .heading {
   max-width: 1460px;
   margin: 0 auto;
@@ -90,6 +93,67 @@
 .hero_section img {
   width: 468.81px;
 }
+main{
+    width: 100%;
+    text-align: center;
+}
+.curriculum{
+    background-image: url("assets/bg.png");
+
+}
+.curriculum_heading{
+    margin: 60px 0 80px 0;
+    font-size: 2.8rem;
+}
+.curriculum_cards{
+    display: grid;
+    grid-template-columns: repeat(3,368px);
+    align-items: center;
+    justify-content: center;
+    gap: 50px;
+    margin-bottom: 80px;
+
+}
+.curriculum_card{
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+    width: 368px;
+    height: 477px;
+    background-color: #DEF5FF;
+    padding: 15px;
+}
+.curriculum_card img{
+    margin-top: 53px;
+    width: 137px;
+    height: 137px;
+    margin-bottom: 32px;
+}
+.curriculum_card h1{
+    font-size: 1.5rem;
+    font-weight: bold;
+}c
+.curriculum_card p{
+    margin-bottom: 34px;
+    font-size: 0.9rem;
+}
+.curriculum_card h2{
+    margin-bottom:  54px;
+    font-size: 0.9rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 @media screen and (max-width:576px) {
     
@@ -131,5 +195,19 @@
     max-width: 357px;
     text-wrap: wrap;
 }
-
+.curriculum_heading{
+    font-size: 1.6rem;
+}
+.curriculum_cards{
+    grid-template-columns: repeat(1,357px);
+    gap: 20px;
+}
+.curriculum_card{
+    width: 327px;
+    height: 420px;
+   
+}
+.arrow{
+display: none;
+}
 }
