@@ -1,0 +1,135 @@
+.color_01 {
+  color: #fea301;
+}
+.color_02 {
+  color: #01acfd;
+}
+.color_03 {
+  color: #05d4df;
+}
+.color_04 {
+  color: #5d58ef;
+}
+.heading {
+  max-width: 1460px;
+  margin: 0 auto;
+}
+.nav_head {
+  gap: 186px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_left {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.nav_left img {
+  margin-right: 15px;
+}
+.nav_head h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
+.nav_middle {
+  width: 387px;
+  display: flex;
+}
+.nav_middle li {
+  list-style: none;
+  margin-right: 32px;
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+.nav_right button {
+  width: 197px;
+  height: 50px;
+  background-color: orange;
+  color: white;
+  font-size: 1.25rem;
+  font-weight: 300;
+  border-radius: 12px;
+  border: none;
+}
+.option{
+    display: none;
+}
+
+.hr{
+    width: 100%;
+    border: 0.1px solid rgb(248, 220, 168);
+    display: none;
+}
+.hero_section {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.hero_section_info {
+  width: 800px;
+}
+.hero_section_info h1 {
+  font-size: 3.5rem;
+  font-weight: bold;
+}
+.hero_section_info p {
+  font-size: 1.25rem;
+}
+.basic_btn {
+  width: 197px;
+  height: 50px;
+  background-color: black;
+  color: white;
+  border-radius: 12px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.hero_section img {
+  width: 468.81px;
+}
+
+@media screen and (max-width:576px) {
+    
+.nav_left h1{
+    display: none;
+}
+.nav_middle{
+    display: none;
+}
+.nav_right{
+    display: none;
+}
+.option{
+    display: inline;
+}
+.hr{
+    display: inline-block;
+}
+.hero_section{
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+}
+.hero_section img{
+ width: 336px;
+ height: 413px;
+ margin-left: 0;
+}
+.hero_section_info{
+    text-align: center;
+}
+.hero_section_info h1{
+    font-size: 2rem;
+    margin-bottom: 18px;
+}
+.hero_section_info p{
+    margin-left: 220px;
+    font-size: 0.8rem;
+    max-width: 357px;
+    text-wrap: wrap;
+}
+
+}
