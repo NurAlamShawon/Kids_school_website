@@ -187,14 +187,14 @@ main {
 }
 .stories_left_cards {
   width: 675px;
-  height: 740px;
+  height: 735px;
   margin-right: 10px;
   border-radius: 16px;
   background-color: white;
 }
 .stories_left_cards button {
   height: 48px;
-  width: 175px;
+  width: 170px;
   position: relative;
   top: -30px;
   left: -145px;
