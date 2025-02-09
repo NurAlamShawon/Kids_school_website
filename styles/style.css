@@ -1,3 +1,9 @@
+.quicksand-normal{
+  font-family: "Quicksand", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
 body{
   margin-top: 0px; 
   margin-bottom: 0px; 
@@ -20,6 +26,15 @@ body{
 .color_05 {
   color: #808080;
 }
+.blend_bg1{
+  background: linear-gradient(to bottom, #D7F1FF, #f5f9fd, white);
+}
+.blend_bg2{
+  background: linear-gradient(to bottom, #FFF4DC, #f5f9fd, white);
+}
+.blend_bg3{
+  background: linear-gradient(to bottom, #F2E8FF, #f5f9fd, white);
+}
 .heading {
   max-width: 1460px;
   margin: 0 auto;
@@ -30,8 +45,6 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-
-
 }
 .nav_left {
   display: flex;
@@ -106,12 +119,14 @@ body{
 main {
   width: 100%;
   text-align: center;
+  background: linear-gradient(to bottom, white, #f5f9fd, #FFF4DC),
+   url('../assets/bg.png');
+  background-repeat: repeat;
+  background-blend-mode: overlay;
 }
 .curriculum {
-  background-image: url("assets/bg.png");
   max-width: 1480px;
   margin:  0 auto;
-  
 }
 .curriculum_heading {
   margin: 60px 0 80px 0;
@@ -129,8 +144,9 @@ main {
   box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
   width: 420px;
   height: 477px;
-  background-color: #def5ff;
   padding: 15px;
+  border:none;
+  border-radius: 19px;
 }
 .curriculum_card img {
   margin-top: 53px;
@@ -154,7 +170,7 @@ main {
   max-width: 1480px;
   margin:  0 auto;
   height: 1018px;
-  margin-bottom: 60px;
+  padding-bottom: 60px;
   text-align: center;
 
 }
@@ -174,7 +190,7 @@ main {
   height: 740px;
   margin-right: 10px;
   border-radius: 16px;
-  background-color: rgb(33, 30, 30);
+  background-color: white;
 }
 .stories_left_cards button {
   height: 48px;
@@ -210,7 +226,7 @@ main {
   gap: 15px;
 }
 .stories_right_card {
-  background-color: #01acfd;
+  background-color: white;
   border-radius: 16px;
 }
 .stories_right_card h1 {
@@ -288,9 +304,15 @@ footer {
 }
 
 @media screen and (max-width: 576px) {
+
   .nav_left h1 {
     display: none;
    
+  }
+  .nav_left img{
+    margin:8px 0 0 10px;
+    height: 46px;
+    width: 46px;
   }
   .nav_middle {
     display: none;
@@ -300,6 +322,7 @@ footer {
   }
   .option {
     display: inline;
+    margin-right: 10px;
   }
   .hr {
     display: inline-block;
@@ -322,7 +345,7 @@ footer {
     margin-bottom: 18px;
   }
   .hero_section_info p {
-    margin-left: 227px;
+    margin-left: 236px;
     font-size: 0.7rem;
     max-width: 330px;
     text-wrap: wrap;
@@ -331,15 +354,20 @@ footer {
     font-size: 1.6rem;
   }
   .curriculum_cards {
-    grid-template-columns: repeat(1, 330px);
+    grid-template-columns: repeat(1, 350px);
     gap: 20px;
   }
   .curriculum_card {
-    width: 327px;
+    border-radius: 13px;
+    width:calc(100% - 25px);
     height: 420px;
+  
   }
   .arrow {
     display: none;
+  }
+  .stories{
+    height: 660px;
   }
   .stories_left_cards {
     display: none;
@@ -421,7 +449,6 @@ footer {
   }
   .footer_right img {
     width: 34px;
-
     height: 34px;
     margin-right: 10px;
     border-radius: 4px;
